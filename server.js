@@ -60,7 +60,7 @@ app.post("/auth/login", (req, res) => {
     otpStore[loginSessionId] = otp;
 
     console.log(`[OTP] Session ${loginSessionId} generated`);
-    console.log(otp);
+    // console.log(otp);
     
     return res.status(200).json({
       message: "OTP sent",
